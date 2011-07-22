@@ -15,7 +15,8 @@
       6: 'VI',
       7: 'VII',
       8: 'VIII',
-      9: 'XI'
+      9: 'XI',
+      10: 'X'
     };
     _results = [];
     for (integer in tests) {
