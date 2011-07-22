@@ -3,7 +3,12 @@
 #
 window.toRoman = (number) ->
   output = ''
+  number = number * 1
   while number > 0
-    output += 'I'
-    number--
+    if number == 4
+      output += 'IV'
+      number -= 4
+    else
+      output += 'I'
+      number--
   output
