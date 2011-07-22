@@ -4,7 +4,7 @@ Today we're all gonna have a crack at doing the roman numerals TDD exercise usin
 
 I've borrowed the rough project structure from https://gist.github.com/673967 to get things working with guard, etc
 
-to get started:
+to get started you should fork & clone this project, then run the following commands:
 
     bundle install
 
