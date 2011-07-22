@@ -25,6 +25,9 @@ describe 'toRoman()', ->
     18: 'XVIII'
     19: 'XIX'
     20: 'XX'
+    25: 'XXV'
+    30: 'XXX'
+    40: 'XL'
 
   for integer, roman of tests
     testRoman integer, roman

@@ -4,7 +4,10 @@
     output = '';
     number = number * 1;
     while (number > 0) {
-      if (number >= 10) {
+      if (number >= 40) {
+        output += 'XL';
+        number -= 40;
+      } else if (number >= 10) {
         output += 'X';
         number -= 10;
       } else if (number >= 9) {
