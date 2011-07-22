@@ -10,6 +10,7 @@ describe 'toRoman()', ->
     3: 'III'
     4: 'IV'
     5: 'V'
+    6: 'VI'
 
   for integer, roman of tests
     testRoman integer, roman
