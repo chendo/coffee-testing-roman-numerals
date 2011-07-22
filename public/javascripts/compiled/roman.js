@@ -1,28 +1,32 @@
 (function() {
   window.toRoman = function(number) {
-    var output;
+    var output, processNumeral;
     output = '';
     number = number * 1;
-    while (number > 0) {
-      if (number >= 40) {
-        output += 'XL';
-        number -= 40;
-      } else if (number >= 10) {
-        output += 'X';
-        number -= 10;
-      } else if (number >= 9) {
-        output += 'IX';
-        number -= 9;
-      } else if (number >= 5) {
-        output += 'V';
-        number -= 5;
-      } else if (number >= 4) {
-        output += 'IV';
-        number -= 4;
-      } else {
-        output += 'I';
-        number--;
+    processNumeral = function(value, roman) {
+      if (number >= value) {
+        output += roman;
+        number -= value;
+        return true;
       }
+    };
+    while (number > 0) {
+      if (processNumeral(40, 'XL')) {
+        continue;
+      }
+      if (processNumeral(10, 'X')) {
+        continue;
+      }
+      if (processNumeral(9, 'IX')) {
+        continue;
+      }
+      if (processNumeral(5, 'V')) {
+        continue;
+      }
+      if (processNumeral(4, 'IV')) {
+        continue;
+      }
+      processNumeral(1, 'I');
     }
     return output;
   };
