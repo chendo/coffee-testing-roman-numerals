@@ -25,7 +25,8 @@
       16: 'XVI',
       17: 'XVII',
       18: 'XVIII',
-      19: 'XIX'
+      19: 'XIX',
+      20: 'XX'
     };
     _results = [];
     for (integer in tests) {
