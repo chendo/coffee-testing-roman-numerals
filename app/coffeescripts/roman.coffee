@@ -1,5 +1,5 @@
 #
 # Do roman numerals
 #
-window.fib = (number) ->
+window.toRoman = (number) ->
   "I"
