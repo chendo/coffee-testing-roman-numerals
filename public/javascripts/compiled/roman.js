@@ -11,6 +11,9 @@
       }
     };
     while (number > 0) {
+      if (processNumeral(50, 'L')) {
+        continue;
+      }
       if (processNumeral(40, 'XL')) {
         continue;
       }

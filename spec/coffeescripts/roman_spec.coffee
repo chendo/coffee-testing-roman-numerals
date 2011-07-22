@@ -30,7 +30,7 @@ describe 'toRoman()', ->
     40: 'XL'
     45: 'XLV'
     49: 'XLIX'
-
+    50: 'L'
 
   for integer, roman of tests
     testRoman integer, roman

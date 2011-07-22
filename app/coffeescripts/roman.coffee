@@ -11,6 +11,7 @@ window.toRoman = (number) ->
       true
 
   while number > 0
+    continue if processNumeral 50, 'L'
     continue if processNumeral 40, 'XL'
     continue if processNumeral 10, 'X'
     continue if processNumeral 9, 'IX'

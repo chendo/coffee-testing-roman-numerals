@@ -31,7 +31,8 @@
       30: 'XXX',
       40: 'XL',
       45: 'XLV',
-      49: 'XLIX'
+      49: 'XLIX',
+      50: 'L'
     };
     _results = [];
     for (integer in tests) {
