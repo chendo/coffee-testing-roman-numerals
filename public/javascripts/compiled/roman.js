@@ -1,5 +1,11 @@
 (function() {
   window.toRoman = function(number) {
-    return "I";
+    var output;
+    output = '';
+    while (number > 0) {
+      output += 'I';
+      number--;
+    }
+    return output;
   };
 }).call(this);

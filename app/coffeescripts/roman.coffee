@@ -2,4 +2,8 @@
 # Do roman numerals
 #
 window.toRoman = (number) ->
-  "I"
+  output = ''
+  while number > 0
+    output += 'I'
+    number--
+  output
